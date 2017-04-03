@@ -1,0 +1,296 @@
+<div class="image-container set-full-height">
+  <!--   Big container   -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <!--      Wizard container        -->
+        <div class="wizard-container">
+          <div class="card wizard-card" data-color="blue" id="wizard">
+            <form action="" method="">
+              <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+              <div class="wizard-header">
+                <h3>
+                  Select Hotel
+                </h3>
+              </div>
+              <div class="wizard-navigation">
+                <ul>
+                  <li><a href="#criteria" data-toggle="tab">Select your travel criteria</a></li>
+                  <li><a href="#result" data-toggle="tab">Suggestions</a></li>
+                </ul>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-pane" id="criteria">
+                  <div class="row content-section">
+                    <div class="col-sm-12">
+                      <h4 class="info-text"> Let's start with the basic details</h4>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                      <div class="form-group">
+                        <label>Airport</label>
+                        <input type="text" class="form-control" id="airport" value="EWR (Newark Liberty)" readonly>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="form-group">
+                        <label>Location to visit</label>
+                        <input type="text" class="form-control" id="destination" value="Legoland Ridge Hill, 39 Fitzgerald Street, Yonkers, NY 10710, USA" readonly>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 col-sm-offset-1">
+                      <div class="form-group">
+                        <label>Number of Travelers</label>
+                        <select class="form-control">
+                          <option disabled="" selected="">- travelers -</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 days">
+                      <div class="picker">
+                        <label>Pre-trip and Post-trip days</label><br />
+                        <input type="text" placeholder="1">
+                        <input type="text" placeholder="1">
+                      </div>
+                      <div class="date">
+                        <label>Appointment date</label><br />
+                        <input type="text" value="2017-04-28">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row content-section">
+                    <h4 class="info-text">How will you get around on your trip? </h4>
+                    <div class="col-sm-12">
+                      <div class="col-sm-4">
+                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you will rent a car.">
+                          <input type="radio" name="type" value="Rental Car">
+                          <div class="icon">
+                            <i class="fa fa-car"></i>
+                          </div>
+                          <h6>Rental Car</h6>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you will primarily use public transportation.">
+                          <input type="radio" name="type" value="Public Transportation">
+                          <div class="icon">
+                            <i class="fa fa-bus"></i>
+                          </div>
+                          <h6>Public Transportation</h6>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you will primarily get around on foot. NOTE: this option uses public transportation for longer distances, but prefers hotels that are as close as possible to your destination. If no hotels are within walking distance, we'll let you know.">
+                          <input type="radio" name="type" value="On Foot">
+                          <div class="icon">
+                            <i class="fa fa-location-arrow"></i>
+                          </div>
+                          <h6>On Foot</h6>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="row content-section">
+                    <h4 class="info-text">Tell us more about your preferences. </h4>
+                    <div class="col-sm-5 col-sm-offset-1">
+                      <div class="form-group">
+                        <label>Distance to visit location</label>
+                        <select class="form-control">
+                          <option disabled="" selected="">- select -</option>
+                          <option>Very close (< 5 minutes)</option>
+                          <option>Inbetween the airport and destination </option>
+                          <option>Closer to the airport than the destination</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="form-group">
+                        <label>Minimum star rating</label>
+                        <select class="form-control">
+                          <option disabled="" selected="">- select -</option>
+                          <option>&#9734 &#9734 &#9734 &#9734 &#9734</option>
+                          <option>&#9734 &#9734 &#9734 &#9734</option>
+                          <option>&#9734 &#9734 &#9734</option>
+                          <option>&#9734 &#9734</option>
+                          <option>&#9734</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Maximum price (EUR)</label>
+                        <input type="text" placeholder="200">
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-sm-12 col-sm-offset-1">
+                        <h3>Required amenities</h3>
+                        <div class="form-group">
+                          <h5>Productivity</h5>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> WiFi
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Audio-visual equipment
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Conference/meeting rooms
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12 col-sm-offset-1">
+                        <div class="form-group">
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Business center
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Photocopier
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Fax Machine
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12 col-sm-offset-1">
+                        <div class="form-group">
+                          <h5>Fitness and Leisure</h5>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Fitness center
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Free weights
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Cardio machines
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12 col-sm-offset-1">
+                        <div class="form-group">
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Pool
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Spa
+                            </label>
+                          </div>
+                          <div class="col-sm-3">
+                            <label class="checkbox-inline">
+                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Sauna
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab-pane" id="result">
+                  <div class="row">
+                    <h4 class="info-text"> Based on your input and hotel availability, these are the hotels we would recommend. </h4>
+                    <div class="col-sm-4">
+                      <div class="hotel-list">
+                        <div class="best-entry" id="benjamin">
+                          <h4>The Benjamin</h4> <span class="best-match">Best Match!</span><br>
+                          <div class="hotel-details">
+                            <%= image_tag 'benjamin.jpg', class: 'hotel-image' %>
+                            <p>≈ 30 minutes from Legoland</p>
+                            <p>4/4 of your criteria!</p>
+                            <p class="right">Available based on your dates!<br>
+                            From &euro;120</p>
+                          </div>
+                        </div>
+                          <div class="hotel-entry" id="residence">
+                            <h4>Residence Inn Midtown East</h4>
+                            <div class="hotel-details">
+                              <%= image_tag 'residence.jpg', class: 'hotel-image' %><br>
+                              <p>≈ 30 minutes from Legoland</p>
+                              <p>3/4 of your criteria</p>
+                              <p class="right">Available based on your dates!<br>
+                              From &euro;160</p>
+                            </div>
+                          </div>
+                          <div class="hotel-entry" id="marriott">
+                            <h4>Newark International Marriott</h4>
+                            <div class="hotel-details">
+                              <%= image_tag 'marriott.jpg', class: 'hotel-image' %><br>
+                              <p>≈ 60 minutes from Legoland</p>
+                              <p>3/4 of your criteria</p>
+                              <p class="right">Available based on your dates!<br>
+                              From &euro;140</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8" id="map">
+                        <%= image_tag 'benjamin_map.png', class: 'img-responsive' %>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              <div class="wizard-footer">
+                    <div class="pull-right">
+                      <input type='button' class='btn btn-next btn-fill btn-success btn-wd btn-sm' name='next' value='Next' />
+                      <a href="/finish"><input type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='Select hotel' value='Select hotel' /></a>
+
+                    </div>
+                    <div class="pull-left">
+                      <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+            </form>
+          </div>
+        </div> <!-- wizard container -->
+      </div>
+    </div> <!-- row -->
+  </div> <!--  big container -->
+
+  <div class="footer">
+    <div class="container">
+    </div>
+  </div>
+</div>

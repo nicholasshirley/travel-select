@@ -1,0 +1,25 @@
+$(document).ready(function() {
+	$('#benjamin').on ('click', function() {
+		$('.hotel-details').fadeOut();
+		$(this).children('.hotel-details').fadeIn();
+		$('#map').children('img').attr('src', "<%= image_path 'benjamin_map.png' %>");
+	})
+});
+
+$(document).ready(function() {
+	$('#residence .hotel-details').hide();
+	$('#residence').on ('click', function() {
+		$('.hotel-details').fadeOut();
+		$(this).children('.hotel-details').fadeIn();
+		$('#map').children('img').attr('src', "<%= image_path 'midtown_east_map.png' %>");
+	})
+});
+
+$(document).ready(function() {
+	$('#marriott .hotel-details').hide();
+	$('#marriott').on ('click', function() {
+		$('.hotel-details').fadeOut();
+		$(this).children('.hotel-details').fadeIn();
+		$('#map').children('img').attr('src', "<%= image_path 'marriott_map.png' %>");
+	})
+});
