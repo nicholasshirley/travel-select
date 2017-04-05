@@ -1,25 +1,17 @@
 $(document).ready(function() {
 	$('#benjamin').on ('click', function() {
-		$('.hotel-details').fadeOut();
-		$(this).children('.hotel-details').fadeIn();
-		$('#map').children('img').attr('src', "<%= image_path 'benjamin_map.png' %>");
+		$('#map').children('iframe').attr('src', "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAW0qSs1xYc0ktKot-pXuidxKLKvK0Uyrg&origin=Newark+Liberty+International+Airport+(EWR)&waypoints=The+Benjamin+Hotel,+East+50th+Street,+New+York,+NY,+USA&destination=LEGOLAND®+Discovery+Center+Westchester&mode=driving");
 	})
 });
 
 $(document).ready(function() {
-	$('#residence .hotel-details').hide();
 	$('#residence').on ('click', function() {
-		$('.hotel-details').fadeOut();
-		$(this).children('.hotel-details').fadeIn();
-		$('#map').children('img').attr('src', "<%= image_path 'midtown_east_map.png' %>");
+		$('#map').children('iframe').attr('src', "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAW0qSs1xYc0ktKot-pXuidxKLKvK0Uyrg&origin=Newark+Liberty+International+Airport+(EWR)&waypoints=Residence+Inn+by+Marriott+New+York+Manhattan/Midtown+East&destination=LEGOLAND®+Discovery+Center+Westchester&mode=driving");
 	})
 });
 
 $(document).ready(function() {
-	$('#marriott .hotel-details').hide();
 	$('#marriott').on ('click', function() {
-		$('.hotel-details').fadeOut();
-		$(this).children('.hotel-details').fadeIn();
-		$('#map').children('img').attr('src', "<%= image_path 'marriott_map.png' %>");
+		$('#map').children('iframe').attr('src', "https://www.google.com/maps/embed/v1/directions?key=AIzaSyAW0qSs1xYc0ktKot-pXuidxKLKvK0Uyrg&origin=Newark+Liberty+International+Airport+(EWR)&waypoints=Newark+Liberty+International+Airport+Marriott&destination=LEGOLAND®+Discovery+Center+Westchester&mode=driving");
 	})
 });

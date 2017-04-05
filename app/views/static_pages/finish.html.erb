@@ -7,19 +7,21 @@
         <!--      Wizard container        -->
         <div class="wizard-container">
           <div class="card wizard-card" data-color="green" id="wizard">
-              <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
-
-              <div class="wizard-header">
-                <h2>
-                  You've reached the end of the demo
-                </h2>
-                <h3>Next steps: Offer to select a rental car</h3>
+            <!--        You can switch ' data-color="green" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+            <div class="wizard-header finish-line">
+              <h2>
+                You've reached the end of the demo
+              </h2>
+              <h3>Next steps: Offer to select a rental car</h3>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-4 col-xs-6 col-xs-offset-4">
+                <%= link_to "Start over", root_path, type: "button", class: "btn btn-lg btn-success start-over", id: 'force-refresh' %>
               </div>
-
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
           </div>
-          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1441,8 +1441,8 @@ label {
   display: inline;
 }
 
-.hotel-list h3 {
-  display: inline;
+.hotel-list h4, span {
+  margin-left: 10px;
 }
 
 .best-entry {
@@ -1479,14 +1479,7 @@ label {
 .best-entry h1, h2, h3, h4, h5 {
 	margin: 0;
 }
-.best-entry p {
-	margin: 0;
-	font-size: .9em;
-}
-.hotel-entry p {
-	margin: 0;
-	font-size: .9em;
-}
+
 
 .hotel-entry h1, h2, h3, h4, h5 {
 	margin: 0;
@@ -1519,4 +1512,18 @@ label {
 }
 .hotel-details {
 	
+}
+.amenities-list {
+  margin-top: 20px;
+}
+.wizard-header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.finish-line {
+  padding-top: 10em;
+  text-align: center;
+}
+.start-over {
+  font-align: right;
 }
