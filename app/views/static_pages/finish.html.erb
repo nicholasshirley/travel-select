@@ -16,7 +16,16 @@
             </div>
             <div class="row">
               <div class="col-sm-6 col-sm-offset-4 col-xs-6 col-xs-offset-4">
-                <%= link_to "Start over", root_path, type: "button", class: "btn btn-lg btn-success start-over", id: 'force-refresh' %>
+                <script type="text/javascript">
+                  function loadUrl(newLocation)
+                  {
+                  window.location.href = newLocation;
+                  }
+                </script>
+
+                <a type="button" class="btn btn-lg btn-success start-over" href="https://floating-cliffs-58113.herokuapp.com/" onclick="loadUrl(this.href); return false;">Start Over</a>
+                
+                
               </div>
             </div>
           </div>
